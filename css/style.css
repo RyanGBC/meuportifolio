@@ -415,3 +415,44 @@ textarea {
         padding: 20px 50px;
     }
 }
+
+/* Estilos para o botão de menu */
+.menu-toggle {
+    display: none; /* Esconde por padrão em telas maiores */
+}
+
+/* Estilos específicos para telas menores */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra o botão de menu em telas menores */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none; /* Esconde o menu por padrão em telas menores */
+        position: absolute;
+        top: 60px; /* Ajuste conforme necessário para o posicionamento correto */
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+        z-index: 999;
+    }
+
+    .navbar.show {
+        display: block; /* Mostra o menu quando a classe .show é adicionada */
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+}
