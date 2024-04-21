@@ -336,7 +336,11 @@ textarea {
 }
 
 /* Estilos para telas menores (máximo 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1020px) {
+    .home{
+        flex-direction: column;
+    }
+    
     .header {
         text-align: center;
     }
