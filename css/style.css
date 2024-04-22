@@ -335,10 +335,11 @@ textarea {
     background-color: rgb(0, 174, 217);
 }
 
-/* Estilos para telas menores (máximo 768px) */
-@media screen and (max-width: 1020px) {   
-    .header {
-        text-align: center;
+/* Estilos para (iphone 12) */
+@media only screen 
+  and (min-device-width: 390px) 
+  and (max-device-width: 844px) 
+  and (-webkit-min-device-pixel-ratio: 2){
     }
 
     .navbar {
@@ -382,7 +383,6 @@ textarea {
     .social {
         margin-bottom: 20px;
     }
-}
 
 /* Estilos para telas médias (mínimo 769px) */
 @media screen and (min-width: 769px) {
