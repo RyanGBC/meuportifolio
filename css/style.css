@@ -335,7 +335,7 @@ textarea {
     background-color: rgb(0, 174, 217);
 }
 
-/* Estilos para o botão de menu */
+/* Estilos para o botão de menu*/
 .menu-toggle {
     display: none; /* Esconde por padrão em telas maiores */
     color: rgb(0, 225, 255);
