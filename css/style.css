@@ -339,7 +339,9 @@ textarea {
 .menu-toggle {
     display: none; /* Esconde por padrão em telas maiores */
     color: rgb(0, 225, 255);
-    font-size: 30px;
+    font-size: 1.8rem;
+    background-color: transparent;
+    cursor: pointer;
 }
 .menu-toggle:hover{
     color:rgb(255, 255, 255);
@@ -349,3 +351,47 @@ textarea {
 transform:scale(1.0);
 }
 
+.menu-toggle.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+@media screen and (max-width: 1170px)  {
+    .menu-toggle{
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px 12%;
+        z-index: 1000;
+        box-sizing: border-box;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .home-content,
+    .sobre-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .img-box,
+    .contato {
+        display: none;
+    }
+}

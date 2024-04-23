@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Portfólio Ryan Costa</title>
 </head>
 <body>
@@ -98,13 +99,18 @@
         <p class="copyright">© 2024 Ryan Costa | Todos Os Direitos Reservados</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.menu-toggle').click(function () {
-                $('.navbar').toggleClass('show');
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $('.navbar, .menu-toggle, .close-menu').addClass('active');
+            });
+        
+            $('.close-menu').click(function() {
+                $('.navbar, .menu-toggle, .close-menu').removeClass('active');
             });
         });
+        
     </script>
+
 </body>
 </html>
