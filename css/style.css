@@ -104,7 +104,7 @@ span{
 .btn-1{
     padding: 15px 28px;
     background-color: black;
-    color: white;
+    color: rgb(255, 255, 255);
     border: 2px solid transparent;
     border-radius: 8px;
     font-size: 18px;
@@ -125,7 +125,7 @@ span{
     padding: 15px 28px;
     background-color:#ffffff;
     color: rgb(0, 0, 0);
-    border: 2 px solid black;
+    border: 2px solid black;
     border-radius: 8px;
     font-size: 18px;
     letter-spacing: 1px;
@@ -178,7 +178,7 @@ span{
 
 .sobre-content h2{
     text-align: left;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 42px;
 }
 
@@ -188,7 +188,7 @@ span{
 }
 
 .sobre-content p{
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     margin: 2em 0 3em;
 }
@@ -218,7 +218,7 @@ span{
     width: 100%;
     padding: 1.5em;
     font-size: 18px;
-    color: black;
+    color: rgb(0, 0, 0);
     background-color: rgb(241, 241, 241);
     border-radius: .8rem;
     margin: 1rem 0;
@@ -394,4 +394,94 @@ transform:scale(1.0);
     .contato {
         display: none;
     }
+}
+
+@media screen and (max-width: 765px) {
+    .menu-toggle{
+        display: block;
+    }
+    .sobre-img{
+        display: none;
+    }
+    .sobre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8% 10%;
+        gap: 10em;
+        background-color: rgb(0, 0, 0);
+    }
+    .sobre-content h2{
+        text-align: left;
+        color: rgb(255, 255, 255);
+
+    }
+    .sobre-content h3{
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+    }
+    .btn-2{
+        padding: 15px 28px;
+        background-color:#ffffff;
+        color: rgb(0, 0, 0);
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        transition: 0.3s ease;
+        cursor: pointer;
+        overscroll-behavior: none;
+    }
+    .home-content{
+        max-width: 500px;
+    }
+    .home-content h3{
+        font-size: 30px;
+    }
+    .home-content h1{
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    .home-content p{
+        font-size: 18px;
+        margin: 25px 0 30px;
+    }
+    .header{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        padding: 20px 12%;
+        background-color:rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    .btn-1{
+        padding: 15px 28px;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        border: 2px solid transparent;
+        border-radius: 8px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        transition: 0.3s ease;
+        cursor: pointer;
+        margin-left: -27px;
+    }
+    .me-contate {
+        font-size: 24px;
+        color: #000000; /* Cor do texto */
+        margin-bottom: 10px;
+    }
+    
+    #contat {
+        color: rgb(0, 217, 255); /* Cor do texto "Contato" */
+        text-decoration: none;
+    }
+    
 }
