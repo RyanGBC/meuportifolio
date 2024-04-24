@@ -102,16 +102,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script>
-        $(document).ready(function() {
-            $('.menu-toggle').click(function() {
-                $('.navbar, .menu-toggle, .open-menu').addClass('active');
-            });
-        
-            $('.close-menu').click(function() {
-                $('.navbar, .menu-toggle, .open-menu').removeClass('active');
-            });
+    $(document).ready(function() {
+        $('.menu-toggle').click(function() {
+            $('.navbar, .menu-toggle, .close-menu').addClass('active');
         });
-    </script>    
+    
+        $('.close-menu').click(function() {
+            $('.navbar, .menu-toggle, .close-menu').removeClass('active');
+        });
+    });
+
+    </script>
 
 </body>
 </html>

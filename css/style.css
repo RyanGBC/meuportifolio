@@ -394,12 +394,11 @@ transform:scale(1.0);
     .contato {
         display: none;
     }
-}
-
-@media screen and (max-width: 765px) {
-    .menu-toggle{
-        display: block;
+    .btn-abrir {
+        display: none;
     }
+}
+@media screen and (max-width: 768px) {
     .sobre-img{
         display: none;
     }
@@ -483,5 +482,4 @@ transform:scale(1.0);
         color: rgb(0, 217, 255); /* Cor do texto "Contato" */
         text-decoration: none;
     }
-    
 }
