@@ -1,3 +1,4 @@
+/*TODA A ESTILIZÇÃO */
 * {
     margin: 0;
     padding: 0;
@@ -201,10 +202,8 @@ span{
 }
 
 .contato-form form {
-    max-width: 50em;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3em;
+    text-align: justify;
+    text-decoration: none;
 }
 
 .contato-form form .input-box {
@@ -318,50 +317,54 @@ form {
 }
 
 textarea {
-    width: 100%; /* Faça o textarea ocupar 100% da largura do contêiner pai */
-    box-sizing: border-box; /* Isso inclui a largura do preenchimento e da borda no cálculo total da largura */
+    width: 100%; 
+    box-sizing: border-box;
 }
 
-#cxnomes, #cxemails, #cxtelefones, #enviard {
+#cxnomes, #cxemails, #cxtelefones,#enviard {
     background-color: rgb(0, 204, 255);
-    margin-bottom: 15px;
-    padding: 5px;
+    margin: -1px auto 15px;
+    margin: 1px auto 15px;
+    padding: 7px;
     border-radius: 50px;
     color: #fff; /* Texto branco */
     transition: background-color 0.3s ease;
+    display: block;
 }
 
-#cxnomes:hover, #cxemails:hover, #cxtelefones:hover, #enviard:hover {
+#cxnomes:hover, #cxemails:hover, #cxtelefones:hover,#enviard:hover {
     background-color: rgb(0, 174, 217);
 }
-
-/* Estilos para o botão de menu*/
-.menu-toggle {
-    display: none; /* Esconde por padrão em telas maiores */
-    color: rgb(0, 225, 255);
-    font-size: 1.8rem;
-    background-color: transparent;
-    cursor: pointer;
-}
-.menu-toggle:hover{
-    color:rgb(255, 255, 255);
-    border-bottom: 3px solid rgb(255, 255, 255);
-    text-shadow: 0 0 25px rgba(0, 255, 255, 0.753),
-    0 0 50px rgb(0, 255, 255);
-transform:scale(1.0);
+#cxassuntos {
+    width: 200px;
+    height: 100px; 
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 2px solid rgb(0, 204, 255);
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
 }
 
-.menu-toggle.active{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
+#cxassuntos:focus {
+    border-color: rgb(0, 153, 204); /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão do foco */
+}
+
+
+.icon{
+    display: none;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
 }
 
 @media screen and (max-width: 1170px)  {
-    .menu-toggle{
-        display: block;
-    }
-
     .navbar {
         display: none;
         position: fixed;
@@ -398,88 +401,129 @@ transform:scale(1.0);
         display: none;
     }
 }
-@media screen and (max-width: 768px) {
-    .sobre-img{
-        display: none;
-    }
-    .sobre{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 8% 10%;
-        gap: 10em;
-        background-color: rgb(0, 0, 0);
-    }
-    .sobre-content h2{
-        text-align: left;
-        color: rgb(255, 255, 255);
+@media screen and (max-width: 730px) {
+        .sobre-img {
+           display: none;
+         }
+        .sobre {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           padding: 8% 10%;
+           gap: 10em;
+           background-color: rgb(0, 0, 0);
+         }
+        .sobre-content h2 {
+           text-align: left;
+           color: rgb(255, 255, 255);
+         }
+        .sobre-content h3 {
+           font-size: 40px;
+           color: rgb(255, 255, 255);
+         }
+        .btn-2 {
+           padding: 15px 28px;
+           background-color: #ffffff;
+           color: rgb(0, 0, 0);
+           border: 2px solid black;
+           border-radius: 10px;
+           font-size: 20px;
+           letter-spacing: 1px;
+           font-weight: 600;
+           transition: 0.3s ease;
+           cursor: pointer;
+           overscroll-behavior: none;
+         }
+        .home-content {
+           max-width: 500px;
+         }
+        .home-content h3 {
+           font-size: 30px;
+         }
+        .home-content h1 {
+           font-size: 30px;
+           line-height: 1.2;
+         }
+        .home-content p {
+           font-size: 18px;
+           margin: 25px 0 30px;
+         }
+        .header {
+           position: fixed;
+           top: 0px;
+           left: 0px;
+           width: 100%;
+           padding: 20px 12%;
+           background-color: rgba(0, 0, 0, 0.8);
+           backdrop-filter: blur(10px);
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           z-index: 100;
+         }
+        .btn-1 {
+           padding: 15px 28px;
+           background-color: black;
+           color: rgb(255, 255, 255);
+           border: 2px solid transparent;
+           border-radius: 8px;
+           font-size: 18px;
+           letter-spacing: 1px;
+           font-weight: 600;
+           transition: 0.3s ease;
+           cursor: pointer;
+           margin-left: -27px;
+         }
+        .me-contate {
+           font-size: 24px;
+           color: #000000; /* Cor do texto */
+           margin-bottom: 10px;
+         }
+       
+         #contat {
+           color: rgb(0, 217, 255); /* Cor do texto "Contato" */
+           text-decoration: none;
+         }
+         .mobile-menu-icon {
+            display: block;
+          }
+         .icon {
+            display: block;
+          }
+         .mobile-menu-icon button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+          }
+         .mobile-menu ul {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 1rem;
 
-    }
-    .sobre-content h3{
-        font-size: 40px;
-        color: rgb(255, 255, 255);
-    }
-    .btn-2{
-        padding: 15px 28px;
-        background-color:#ffffff;
-        color: rgb(0, 0, 0);
-        border: 2px solid black;
-        border-radius: 10px;
-        font-size: 20px;
-        letter-spacing: 1px;
-        font-weight: 600;
-        transition: 0.3s ease;
-        cursor: pointer;
-        overscroll-behavior: none;
-    }
-    .home-content{
-        max-width: 500px;
-    }
-    .home-content h3{
-        font-size: 30px;
-    }
-    .home-content h1{
-        font-size: 30px;
-        line-height: 1.2;
-    }
-    .home-content p{
+          }
+         .mobile-menu.contato {
+            display: block;
+            padding: 1rem 2rem;
+          }
+         .mobile-menu.contato button {
+            width: 100%;
+          }
+         .open {
+            display: block;
+      }
+      .mobile-menu a{
         font-size: 18px;
-        margin: 25px 0 30px;
+        color: rgb(0, 255, 255);
+        font-weight: 500;
+        margin: 0 20px;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s ease;
     }
-    .header{
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        padding: 20px 12%;
-        background-color:rgba(0, 0, 0, 0.8);
-        backdrop-filter: blur(10px);
+    .mobile-menu a:hover,
+    .mobile-menu a.active{
+        color:rgb(255, 255, 255);
+        border-bottom: 3px solid rgb(255, 255, 255);
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
-    }
-    .btn-1{
-        padding: 15px 28px;
-        background-color: black;
-        color: rgb(255, 255, 255);
-        border: 2px solid transparent;
-        border-radius: 8px;
-        font-size: 18px;
-        letter-spacing: 1px;
-        font-weight: 600;
-        transition: 0.3s ease;
-        cursor: pointer;
-        margin-left: -27px;
-    }
-    .me-contate {
-        font-size: 24px;
-        color: #000000; /* Cor do texto */
-        margin-bottom: 10px;
-    }
-    
-    #contat {
-        color: rgb(0, 217, 255); /* Cor do texto "Contato" */
-        text-decoration: none;
     }
 }

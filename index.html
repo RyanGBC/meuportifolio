@@ -11,10 +11,9 @@
     <header class="header">
         <a href="index.html" class="logo"><span>Ryan</span>Costa</a> 
 
-        <!--Ìcone para abrir o menu -->
-        <button class="menu-toggle">
-            <i class='bx bx-menu'></i>
-        </button>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+        </div>
 
         <nav class="navbar">
             <a href="serviços.html">Serviços</a>
@@ -22,6 +21,13 @@
             <a href="projetos.html" target="_blank">Projetos</a>
             <a href="#">Educação</a>
         </nav>
+
+        <ul class="mobile-menu">
+            <li><a href="serviços.html">Serviços</a></li>
+            <li><a href="#">Experiência</a></li>
+            <li><a href="projetos.html" target="_blank">Projetos</a></li>
+            <li><a href="#">Educação</a></li>
+        </ul>
     
         <a href="https://wa.link/tc5x61" target="_blank" class="contato">Entre em Contato</a>
     </header>
@@ -30,10 +36,9 @@
         <div class="home-content">
             <h3>Olá</h3>
 
-            <h1>Eu sou o <span>Ryan <br> </span> Desenvolvedor Fullstack
-            </h1>
+            <h1>Eu sou o <span>Ryan <br> </span> Desenvolvedor Fullstack</h1>
 
-            <p> Estudante dedicado de Análise e Desenvolvimento de Sistemas na UNIPIAGET, com ênfase em projetos práticos. Destaco minha participação em três projetos notáveis: colaboração no design UX/UI, liderança no desenvolvimento de um site para uma casa de limpeza e criação completa de um site utilizando HTML5 e CSS3. Essas experiências aprimoraram minhas habilidades técnicas, colaborativas e de gestão de projetos, preparando-me para contribuir de maneira significativa no campo da tecnologia da informação. Pronto para continuar aprendendo e crescendo ao longo da minha jornada acadêmica.</p>
+            <p>Estudante dedicado de Análise e Desenvolvimento de Sistemas na UNIPIAGET, com ênfase em projetos práticos. Destaco minha participação em três projetos notáveis: colaboração no design UX/UI, liderança no desenvolvimento de um site para uma casa de limpeza e criação completa de um site utilizando HTML5 e CSS3. Essas experiências aprimoraram minhas habilidades técnicas, colaborativas e de gestão de projetos, preparando-me para contribuir de maneira significativa no campo da tecnologia da informação. Pronto para continuar aprendendo e crescendo ao longo da minha jornada acadêmica.</p>
 
             <div class="btn-box">
                 <button class="btn-1">Contrate</button>
@@ -50,26 +55,28 @@
             <img src="img/imgpro.jpg" alt="">
         </div>
         <div class="sobre-content">
-            <h2 class="heading"> Sobre <span>Mim</span>
-            </h2>
+            <h2 class="heading"> Sobre <span>Mim</span> </h2>
             <h3>Desenvolvedor <span>Fullstack</span></h3>
             <p>Estudante dedicado de Análise e Desenvolvimento de Sistemas na Unipiaget, estou atualmente no 3° semestre do curso. Possuo experiência sólida em linguagens como HTML5, CSS3, Python e Java. Comprometido com o aprendizado contínuo e aprimoramento constante, busco aplicar meus conhecimentos em projetos práticos e contribuir de forma significativa para o campo da tecnologia da informação.</p>
             <a href="" class="btn-2" id="bt-educ">Educação</a>
         </div>
     </section>
+
     <section class="contato-form">
         <h2 class="me-contate">Entre em  <span id="contat">Contato</span></h2>
+        <form action="inserirdados.php" method="POST">
+            Nome:
+            <input type="text" name="cxnome" id="cxnomes" placeholder="Seu primeiro nome">
+            E-mail:
+            <input type="email" name="cxemail" id="cxemails" placeholder="seu@melhoremail.com">
+            Telefone:
+            <input type="tel" name="cxtelefone" id="cxtelefones" placeholder="Telefone (com DDD)">
+            Assunto:
+            <textarea name="cxassunto" id="cxassuntos" placeholder="Insira sua mensagem aqui!"></textarea>
+ 
+            <input type="submit" value="Enviar dados" id="enviard">
+        </form>
     </section>
-
-    <form action="inserirdados.php" method="POST">
-        Nome:
-        <input type="text" name="cxnome" id="cxnomes" placeholder="Seu primeiro nome">
-        E-mail:
-        <input type="email" name="cxemail" id="cxemails" placeholder="seu@melhoremail.com">
-        Telefone:
-        <input type="tel" name="cxtelefone" id="cxtelefones" placeholder="Telefone (com DDD)">
-        <input type="submit" value="Enviar dados" id="enviard">
-    </form>
 
     <footer class="footer">
         <div class="social">
@@ -79,40 +86,16 @@
             <a href="https://github.com/RyanGBC" target="_blank"><i class='bx bxl-github' ></i></a> 
         </div>
         <ul class="lista">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-            <li>
-                <a href="#">Serviços</a>
-            </li>
-            <li>
-                <a href="#">Sobre mim</a>
-            </li>
-            <li>
-                <a href="#">Contato</a>
-            </li>
-            <li>
-                <a href="#">Política de privacidade</a>
-            </li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Sobre mim</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Política de privacidade</a></li>
         </ul>
-
         <p class="copyright">© 2024 Ryan Costa | Todos Os Direitos Reservados</p>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script>
-    $(document).ready(function() {
-        $('.menu-toggle').click(function() {
-            $('.navbar, .menu-toggle, .close-menu').addClass('active');
-        });
-    
-        $('.close-menu').click(function() {
-            $('.navbar, .menu-toggle, .close-menu').removeClass('active');
-        });
-    });
-
-    </script>
+    <script src="js/javascript.js"></script>
 
 </body>
 </html>
