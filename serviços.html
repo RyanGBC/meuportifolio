@@ -12,13 +12,20 @@
         <header>
             <header class="header">
                 <a href="index.html" class="logo"><span>Ryan</span>Costa</a>         
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+                </div>
+                <nav class="navbar">
+                    <a href="index.html">Serviços</a>
+                    <a href="projetos.html">Projetos</a>
+                    <a href="contato.html">contato</a>
+                </nav>
+        
+                <ul class="mobile-menu">
+                    <li><a href="serviços.html">Serviços</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <a href="#" target="_blank" class="btn-mobile">Entre em Contato</a>
                 </ul>
-            </nav>
         </header>
         <section class="teste">
             <h1>O que eu posso fazer para sua empresa</h1>
@@ -72,5 +79,6 @@
             </ul>
             <p class="copyright">© 2024 Ryan Costa | Todos Os Direitos Reservados</p>
         </footer>
+    <script src="js/javascript.js"></script>
 </body>
 </html>
