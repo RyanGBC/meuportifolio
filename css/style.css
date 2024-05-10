@@ -102,7 +102,7 @@ span{
     gap: 2em;
 }
 
-.btn-1{
+.btn-1 a{
     padding: 15px 28px;
     background-color: black;
     color: rgb(255, 255, 255);
@@ -116,7 +116,7 @@ span{
 
 }
 
-.btn-1:hover{
+.btn-1 a:hover{
     background-color: white;
     color: black;
     border: 2px solid black;
@@ -477,7 +477,7 @@ textarea {
            align-items: center;
            z-index: 100;
          }
-        .btn-1 {
+        .btn-1 a {
            padding: 15px 28px;
            background-color: black;
            color: rgb(255, 255, 255);
