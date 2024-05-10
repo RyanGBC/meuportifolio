@@ -194,6 +194,10 @@ span{
     margin: 2em 0 3em;
 }
 
+#fototeste{
+    display: none;
+    position: relative;
+}
 .contato-form h2 {
     text-align: center;
     margin-top: 3em;
@@ -421,6 +425,18 @@ textarea {
            font-size: 40px;
            color: rgb(255, 255, 255);
          }
+         #fototeste{
+            display: block;
+         }
+         .teste {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8% 12%;
+            gap: 10em;
+            background-color:rgb(241,241,241)
+         }
+
         .btn-2 {
            padding: 15px 28px;
            background-color: #ffffff;
@@ -513,6 +529,14 @@ textarea {
          .open {
             display: block;
       }
+     
+      .mobile-menu .btn-mobile {
+        background-color: rgba(241, 241, 241, 0.877);
+        color: #000000; 
+        padding: 10px 20px; 
+        border-radius: 5px; 
+        font-weight: bold; 
+    }
 
       .btn-mobile {
         background-color: transparent;
@@ -536,11 +560,12 @@ textarea {
         top: 80px;
         left: 0;
         width: 100%;
-        height: 150%;
         background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo semi-transparente */
         transform: translateX(-100%);
-        transition: transform 0.1s step-end;
+        transition: transform 0.3s ease-in-out; 
+        gap: 10px;
     }
+    
     
     .mobile-menu.open {
         transform: translateX(0);
@@ -557,8 +582,7 @@ textarea {
     
     .mobile-menu a:hover,
     .mobile-menu a.active {
-        color: rgb(255, 255, 255);
-        border-bottom: 3px solid rgb(255, 255, 255);
+       display: block;
     }
     
 }
