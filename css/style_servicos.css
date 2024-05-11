@@ -101,6 +101,13 @@ span{
     margin: 25px 0 30px;
 }
 
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
 
 nav ul li {
     display: inline;
