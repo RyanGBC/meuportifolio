@@ -69,13 +69,13 @@
         <h2 class="me-contate">Entre em  <span id="contat">Contato</span></h2>
         <form action="inserirdados.php" method="POST">
             Nome:
-            <input type="text" name="cxnome" id="cxnomes" placeholder="Seu primeiro nome">
+            <input type="text" name="cxnome" id="cxnomes" placeholder="Seu primeiro nome" required>
             E-mail:
-            <input type="email" name="cxemail" id="cxemails" placeholder="seu@melhoremail.com">
+            <input type="email" name="cxemail" id="cxemails" placeholder="seu@melhoremail.com" required>
             Telefone:
-            <input type="tel" name="cxtelefone" id="cxtelefones" placeholder="Telefone (com DDD)">
+            <input type="tel" name="cxtelefone" id="cxtelefones" placeholder="Telefone (com DDD)" required>
             Assunto:
-            <textarea name="cxassunto" id="cxassuntos" placeholder="Insira sua mensagem aqui!"></textarea>
+            <textarea name="cxassunto" id="cxassuntos" placeholder="Insira sua mensagem aqui!" required></textarea>
  
             <input type="submit" value="Enviar dados" id="enviard">
         </form>
