@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="description" content="Portfólio de Ryan Costa, Desenvolvedor Fullstack. Conheça meus serviços, projetos e entre em contato.">
+    <meta name="keywords" content="Ryan Costa, Desenvolvedor Fullstack, Portfólio, Projetos, Serviços">
     <title>Portfólio Ryan Costa</title>
 </head>
 <body>
@@ -12,81 +14,77 @@
         <a href="index.html" class="logo"><span>Ryan</span>Costa</a> 
 
         <nav class="mobile-menu-icon">
-            <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt="Menu"></button>
         </nav>
 
         <nav class="navbar">
             <a href="serviços.html">Serviços</a>
-            <a href="#">Experiência</a>
+            <a href="#experiencia">Experiência</a>
             <a href="projetos.html">Projetos</a>
         </nav>
 
         <ul class="mobile-menu">
             <li><a href="serviços.html">Serviços</a></li>
-            <li><a href="#">Experiência</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
             <li><a href="projetos.html">Projetos</a></li>
-            <a href="#" target="_blank" class="btn-mobile">Entre em Contato</a>
+            <a href="https://wa.link/tc5x61" target="_blank" class="btn-mobile">Entre em Contato</a>
         </ul>
     
         <a href="https://wa.link/tc5x61" target="_blank" class="contato">Entre em Contato</a>
     </header>
     
-    <section class="home">
-        <article class="home-content">
-            <h2>Olá</h2>
+    <main>
+        <section class="home">
+            <article class="home-content">
+                <h2>Olá</h2>
+                <h1>Eu sou o <span>Ryan</span> Desenvolvedor Fullstack</h1>
+                <p>Estudante dedicado de Análise e Desenvolvimento de Sistemas na UNIPIAGET, 
+                com ênfase em projetos práticos. Destaco minha participação em três projetos notáveis: 
+                colaboração no design UX/UI, liderança no desenvolvimento de um site para uma casa de limpeza e 
+                criação completa de um site utilizando HTML5 e CSS3. Essas experiências aprimoraram minhas habilidades técnicas,
+                colaborativas e de gestão de projetos, preparando-me para contribuir de maneira significativa no campo da tecnologia da informação.
+                Pronto para continuar aprendendo e crescendo ao longo da minha jornada acadêmica.</p>
 
-            <h1>Eu sou o <span>Ryan</span> Desenvolvedor Fullstack</h1>
+                <nav class="btn-box">
+                    <button class="btn-1"><a href="#entremcontato">Contrate</a></button>
+                    <button class="btn-2">Experiência</button>
+                </nav>
+            </article>
+            <figure class="img-box">
+                <img src="img/imgpro.jpg" alt="Foto de perfil de Ryan Costa" loading="lazy">
+            </figure>
+        </section>
 
-            <p>Estudante dedicado de Análise e Desenvolvimento de Sistemas na UNIPIAGET, 
-            com ênfase em projetos práticos. Destaco minha participação em três projetos notáveis: 
-            colaboração no design UX/UI, liderança no desenvolvimento de um site para uma casa de limpeza e 
-            criação completa de um site utilizando HTML5 e CSS3. Essas experiências aprimoraram minhas habilidades técnicas,
-            colaborativas e de gestão de projetos, preparando-me para contribuir de maneira significativa no campo da tecnologia da informação.
-            Pronto para continuar aprendendo e crescendo ao longo da minha jornada acadêmica.</p>
+        <section class="sobre">
+            <figure class="sobre-img">
+                <img src="img/imgpro.jpg" alt="Foto de perfil de Ryan Costa" loading="lazy">
+            </figure>
+            <article class="sobre-content">
+                <h2 id="sobre-mim-heading" class="heading"> Sobre <span>Mim</span> </h2>
+                <h3>Desenvolvedor <span>Fullstack</span></h3>
+                <p>Estudante dedicado de Análise e Desenvolvimento de Sistemas na Unipiaget.
+                    Possuo experiência sólida em linguagens como HTML5, CSS3, Python e Java. Comprometido com o aprendizado contínuo e aprimoramento constante,
+                    busco aplicar meus conhecimentos em projetos práticos e contribuir de forma significativa para o campo da tecnologia da informação.</p>
+                <a href="#educacao" class="btn-2" id="bt-educ">Educação</a>
+            </article>
+        </section>
 
-            <nav class="btn-box">
-                <button class="btn-1"><a href="#entremcontato">Contrate</a></button>
-                <button class="btn-2">Experiência</button>
-            </nav>
-        </article>
-        <figure class="img-box">
-            <img src="img/imgpro.jpg" alt="fotoperfil">
-        </figure>
-    </section>
-    <section class="teste">
-    <figure id="fototeste">
-        <img src="img/imgpro2.png" alt="fotoperfil">
-    </figure>
-    </section>
-    <section class="sobre">
-        <figure class="sobre-img">
-            <img src="img/imgpro.jpg" alt="fotoperfil">
-        </figure>
-        <article class="sobre-content">
-            <h2 id="sobre-mim-heading" class="heading"> Sobre <span>Mim</span> </h2>
-            <h3>Desenvolvedor <span>Fullstack</span></h3>
-            <p>Estudante dedicado de Análise e Desenvolvimento de Sistemas na Unipiaget.
-                Possuo experiência sólida em linguagens como HTML5, CSS3, Python e Java. Comprometido com o aprendizado contínuo e aprimoramento constante,
-                busco aplicar meus conhecimentos em projetos práticos e contribuir de forma significativa para o campo da tecnologia da informação.</p>
-            <a href="" class="btn-2" id="bt-educ">Educação</a>
-        </article>
-    </section>
-
-    <section class="contato-form">
-        <h2 class="me-contate">Entre em  <span id="contat">Contato</span></h2>
-        <form action="#" method="POST">
-            Nome:
-            <input type="text" name="cxnome" id="cxnomes" placeholder="Seu primeiro nome" required>
-            E-mail:
-            <input type="email" name="cxemail" id="cxemails" placeholder="seu@melhoremail.com" required>
-            Telefone:
-            <input type="tel" name="cxtelefone" id="cxtelefones" placeholder="Telefone (com DDD)" required>
-            Assunto:
-            <textarea name="cxassunto" id="cxassuntos" placeholder="Insira sua mensagem aqui!" required></textarea>
- 
-            <input type="submit" value="Enviar dados" id="enviard">
-        </form>
-    </section>
+        <section class="contato-form" id="contato-form">
+            <h2 class="me-contate">Entre em  <span id="contat">Contato</span></h2>
+            <form action="#" method="POST">
+                Nome:
+                <input type="text" name="cxnome" id="cxnomes" placeholder="Seu primeiro nome" required>
+                E-mail:
+                <input type="email" name="cxemail" id="cxemails" placeholder="seu@melhoremail.com" required>
+                Telefone:
+                <input type="tel" name="cxtelefone" id="cxtelefones" placeholder="Telefone (com DDD)" required>
+                Assunto:
+                <textarea name="cxassunto" id="cxassuntos" placeholder="Insira sua mensagem aqui!" required></textarea>
+    
+                <input type="submit" value="Enviar dados" id="enviard">
+            </form>
+        </section>
+    </main>
 
     <footer class="footer">
         <nav class="social">
@@ -105,6 +103,5 @@
     </footer>
 
     <script src="js/javascript.js"></script>
-
 </body>
 </html>
