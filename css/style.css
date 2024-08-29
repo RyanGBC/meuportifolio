@@ -395,6 +395,7 @@ textarea {
     .sobre-content {
         width: 100%;
         max-width: 100%;
+        margin-top: 70px;
     }
 
     .img-box,
