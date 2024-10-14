@@ -407,15 +407,31 @@ textarea {
     }
 }
 @media screen and (max-width: 980px) {
+        .body {
+            overflow-x: hidden;
+        }
+
+        .header {
+            padding: 20px 5%;
+        }
+
+        .home {
+            padding: 30px 5% 0;
+            gap: 2em;
+        }
+
+        .home-content, .sobre-content {
+            width: 100%;
+            max-width: 100%;
+        }
+
         .sobre-img {
            display: none;
          }
         .sobre {
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           padding: 8% 10%;
-           gap: 10em;
+           flex-direction: column;
+           padding: 8% 5%;
+           gap: 2em;
            background-color: rgb(0, 0, 0);
          }
         .sobre-content h2 {
@@ -439,12 +455,12 @@ textarea {
          }
 
         .btn-2 {
-           padding: 15px 28px;
+           padding: 10px 20px;
            background-color: #ffffff;
            color: rgb(0, 0, 0);
            border: 2px solid black;
            border-radius: 10px;
-           font-size: 20px;
+           font-size: 16px;
            letter-spacing: 1px;
            font-weight: 600;
            transition: 0.3s ease;
@@ -455,14 +471,14 @@ textarea {
            max-width: 500px;
          }
         .home-content h3 {
-           font-size: 30px;
+           font-size: 24px;
          }
         .home-content h1 {
-           font-size: 30px;
+           font-size: 36px;
            line-height: 1.2;
          }
         .home-content p {
-           font-size: 18px;
+           font-size: 16px;
            margin: 25px 0 30px;
          }
         .header {
@@ -479,17 +495,17 @@ textarea {
            z-index: 100;
          }
         .btn-1 a {
-           padding: 15px 28px;
+           padding: 10px 20px;
            background-color: black;
            color: rgb(255, 255, 255);
            border: 2px solid transparent;
            border-radius: 8px;
-           font-size: 18px;
+           font-size: 16px;
            letter-spacing: 1px;
            font-weight: 600;
            transition: 0.3s ease;
            cursor: pointer;
-           margin-left: -27px;
+           margin-left: 0;
          }
         .me-contate {
            font-size: 24px;
@@ -576,7 +592,7 @@ textarea {
         font-size: 18px;
         color: rgb(0, 255, 255);
         font-weight: 500;
-        margin: 0 20px;
+        margin: 10px 0;
         border-bottom: 3px solid transparent;
         transition: 0.3s ease;
     }
