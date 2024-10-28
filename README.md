@@ -15,7 +15,7 @@ Tecnologias Utilizadas
 
 - HTML5
 - CSS3
-- futuramente javacript tambem
+- JavaScript
 
 Se você tiver sugestões ou correções para o site, sinta-se à vontade para abrir uma issue ou enviar um pull request. Sua ajuda é muito bem-vinda!
 
