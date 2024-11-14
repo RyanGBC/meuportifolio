@@ -407,6 +407,7 @@ textarea {
     color: #fff; /* Texto branco */
     transition: background-color 0.3s ease;
     display: block;
+    outline-color: #333;
 }
 
 #cxnomes:hover, #cxemails:hover, #cxtelefones:hover,#enviard:hover {
