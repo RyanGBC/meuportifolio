@@ -415,7 +415,7 @@ textarea {
     background-color: rgb(0, 174, 217);
 }
 
-#txt{
+#nome, #email, #telefone, #assunto{
     margin-left: -80px;
 }
 
