@@ -403,6 +403,7 @@ textarea {
     margin: -1px auto 15px;
     margin: 3px auto 15px;
     margin-left: -80px;
+    width: 320px;
     padding: 7px;
     border-radius: 50px;
     color: #fff; 
@@ -420,7 +421,7 @@ textarea {
 }
 
 #cxassuntos {
-    width: 200px;
+    width: 320px;
     height: 100px; 
     padding: 10px;
     font-size: 16px;
