@@ -410,7 +410,7 @@ textarea {
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: block;
-    outline-color: #333;
+    outline-color: none;
 }
 
 #cxnomes:hover, #cxemails:hover, #cxtelefones:hover,#enviard:hover {
