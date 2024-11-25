@@ -99,7 +99,7 @@ span{
 .btn-box{
     width: 345px;
     display: flex;
-    gap: 2em;
+    gap: 1.5em;
 }
 
 .btn-1 a{
