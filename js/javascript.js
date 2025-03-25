@@ -12,8 +12,10 @@ themeToggle.addEventListener('click', () => {
     // Salvar preferência de tema
     if (body.classList.contains('dark-mode')) {
         localStorage.setItem('theme', 'dark');
+        document.querySelector('modedl').src = "img/monn_black.png";
     } else {
         localStorage.setItem('theme', 'light');
+        document.querySelector('modedl').src= "img/moon_light.png";
     }
 });
 

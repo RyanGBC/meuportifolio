@@ -120,6 +120,13 @@ body.dark-mode .footer ul li a {
     color: black;
 }
 
+body.dark-mode .footer .copyright {
+    margin-top: 15pX;
+    text-align: center;
+    font-size: 12pX;
+    color:rgb(0, 0,0)
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -548,7 +555,6 @@ textarea {
     border-color: rgb(0, 153, 204); 
     outline: none;
 }
-
 
 .icon{
     display: none;
