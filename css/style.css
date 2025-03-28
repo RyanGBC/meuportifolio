@@ -31,7 +31,7 @@
 .theme-toggle:hover {
     transform: scale(1.2) translateY(-10px);
     color: rgb(0, 255, 255);
-    border: 2px solid rgb(0, 255, 255);
+    border: 2px solid rgb(0, 255, 253);
 }
 
 /* Estilos para o modo escuro */
@@ -801,5 +801,28 @@ textarea {
     .mobile-menu a.active {
        display: block;
     }
+    .theme-toggle {
+        position: fixed;
+        top: 22px;
+        right: 7px;
+        font-size: 2px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid rgb(0, 255, 234);
+        width: 30px;
+        height: 30px;
+        line-height: 38px;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: inset 0 0 10px rgb(0, 255, 255), 0 0 10px rgb(0, 255, 255);
+        transition: 0.3s ease;
+        z-index: 1000;
+        cursor: pointer;
+    }
     
+    .theme-toggle:hover {
+        transform: scale(1.2) translateY(-10px);
+        color: rgb(0, 255, 255);
+        border: 2px solid rgb(0, 255, 253);
+    }
 }
